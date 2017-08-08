@@ -1,0 +1,9 @@
+{
+  "bank_data": [],
+  "errors": [
+    {
+      "code": "301",
+      "message": "API Key is invalid"
+    }
+  ]
+}
