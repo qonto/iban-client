@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    iban_client (0.0.2)
+    iban_client (0.0.3)
       rest-client (~> 1.8)
 
 GEM
