@@ -1,4 +1,6 @@
-# Iban.com Client
+# Iban.com wrapper
+
+Wrapper for the [iban.com](https://www.iban.com) validation api (v2)
 
 ## Documentation
 
