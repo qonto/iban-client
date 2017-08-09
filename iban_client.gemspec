@@ -10,8 +10,14 @@ Gem::Specification.new do |s|
   s.description = 'Wrapper for the Iban.com API'
   s.authors     = ['Vincent Pochet']
   s.email       = 'vincent@qonto.eu'
+  s.homepage    = "https://github.com/qonto/iban-client"
   s.files       = ['lib/iban_client.rb']
   s.license     = 'WTFPL'
+
+  s.require_paths = ['lib']
+
+  s.required_ruby_version     = '>= 2.2'
+  s.required_rubygems_version = '>= 1.8.11'
 
   s.add_dependency 'rest-client', '~> 1.8'
 

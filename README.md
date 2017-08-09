@@ -9,7 +9,7 @@ See the [API docs](https://www.iban.com/validation-api-v2.html).
 
 ### Requirements
 
-* Ruby 2.0+.
+* Ruby 2.2+.
 
 ### Bundler
 
