@@ -11,9 +11,9 @@ Gem::Specification.new do |s|
   s.authors     = ['Vincent Pochet']
   s.email       = 'vincent@qonto.eu'
   s.homepage    = "https://github.com/qonto/iban-client"
-  s.files       = ['lib/iban_client.rb']
   s.license     = 'WTFPL'
 
+  s.files         = `git ls-files lib`.split("\n")
   s.require_paths = ['lib']
 
   s.required_ruby_version     = '>= 2.2'
