@@ -1,0 +1,44 @@
+{
+  "bank_data": {
+    "bic": null,
+    "branch": null,
+    "bank": null,
+    "address": null,
+    "city": null,
+    "state": null,
+    "zip": null,
+    "phone": null,
+    "fax": null,
+    "www": null,
+    "email": null,
+    "country": "FRANCE",
+    "country_iso": "FR",
+    "account": "00000056639"
+  },
+  "errors": [],
+  "validations": [
+    {
+      "code": "201",
+      "message": "Account Number check digit not correct"
+    },
+    {
+      "code": "202",
+      "message": "IBAN Check digit not correct"
+    },
+    {
+      "code": "005",
+      "message": "IBAN structure is correct"
+    },
+    {
+      "code": "003",
+      "message": "IBAN Length is correct"
+    }
+  ],
+  "sepa_data": {
+    "SCT": "YES",
+    "SDD": "YES",
+    "COR1": "YES",
+    "B2B": "NO",
+    "SCC": "NO"
+  }
+}

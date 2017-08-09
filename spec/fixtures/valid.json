@@ -1,0 +1,44 @@
+{
+  "bank_data": {
+    "bic": "TRZOFR21",
+    "branch": null,
+    "bank": "TREEZOR SAS",
+    "address": "150 RUE GALLIENI",
+    "city": "BOULOGNE BILLANCOURT CEDEX",
+    "state": null,
+    "zip": "92641",
+    "phone": null,
+    "fax": null,
+    "www": null,
+    "email": null,
+    "country": "FRANCE",
+    "country_iso": "FR",
+    "account": "00000056639"
+  },
+  "errors": [],
+  "validations": [
+    {
+      "code": "002",
+      "message": "Account Number check digit is correct"
+    },
+    {
+      "code": "001",
+      "message": "IBAN Check digit is correct"
+    },
+    {
+      "code": "005",
+      "message": "IBAN structure is correct"
+    },
+    {
+      "code": "003",
+      "message": "IBAN Length is correct"
+    }
+  ],
+  "sepa_data": {
+    "SCT": "YES",
+    "SDD": "YES",
+    "COR1": "YES",
+    "B2B": "NO",
+    "SCC": "NO"
+  }
+}
