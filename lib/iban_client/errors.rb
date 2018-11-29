@@ -8,17 +8,17 @@ module IbanClient
   end
 
   class RequestError < Error
-    attr_reader :initial_error
+    attr_reader :response
 
-    def initialize(iban:, initial_error:)
-      @initial_error = initial_error
+    def initialize(iban:, response:)
+      @response = response
       super(iban: iban)
     end
 
     def message
       "#{initial_error.message}\n"\
       "Request iban: #{iban}\n"\
-      "Response: #{initial_error.response}"
+      "Response: #{response}"
     end
   end
 

@@ -50,10 +50,12 @@ describe IbanClient::Iban, iban: true do
 
     context 'with a request error' do
       let(:iban) { 'raise' }
+      it { expect { subject.bic }.to raise_error(IbanClient::RequestError) }
+    end
 
-      it 'raises' do
-        expect { subject.bic }.to raise_error(IbanClient::RequestError)
-      end
+    context 'with an invalid error' do
+      let(:iban) { 'invalid_json' }
+      it { expect { subject.bic }.to raise_error(IbanClient::RequestError) }
     end
   end
 

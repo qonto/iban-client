@@ -52,7 +52,7 @@ module IbanClient
         timeout: IbanClient.timeout
       )
     rescue RestClient::ExceptionWithResponse => err
-      raise IbanClient::RequestError.new(iban: iban, initial_error: err)
+      raise IbanClient::RequestError.new(iban: iban, response: err.response)
     end
 
     def params
@@ -74,6 +74,8 @@ module IbanClient
     def handle_result(&block)
       raise IbanClient::AccountError.new(iban: iban, errors: api_errors) if api_errors.count > 0
       yield
+    rescue JSON::ParserError => err
+      raise IbanClient::RequestError.new(iban: iban, response: request)
     end
   end
 end

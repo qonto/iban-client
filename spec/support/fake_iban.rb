@@ -8,6 +8,8 @@ class FakeIban < Sinatra::Base
       json_response(200, 'valid')
     elsif params['iban'] == 'raise'
       halt 500, { message: 'Failure' }.to_json
+    elsif params['iban'] == 'invalid_json'
+      halt 200, 'invalid_json'
     else
       json_response(200, 'invalid')
     end

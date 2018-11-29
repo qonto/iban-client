@@ -5,7 +5,7 @@ require 'iban_client/version'
 Gem::Specification.new do |s|
   s.name        = 'iban_client'
   s.version     = IbanClient::VERSION
-  s.date        = '2017-08-08'
+  s.date        = '2018-11-29'
   s.summary     = 'Iban.com client'
   s.description = 'Wrapper for the Iban.com API'
   s.authors     = ['Vincent Pochet']
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version     = '>= 2.2'
   s.required_rubygems_version = '>= 1.8.11'
 
-  s.add_dependency 'rest-client', '~> 1.8'
+  s.add_dependency 'rest-client', '~> 2.0'
 
   s.add_development_dependency 'bundler', '~> 1.7'
   s.add_development_dependency 'rspec', '~> 3.1'
