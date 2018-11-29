@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    iban_client (0.0.4)
+    iban_client (0.0.5)
       rest-client (~> 2.0)
 
 GEM
@@ -24,15 +24,15 @@ GEM
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2018.0812)
-    mustermann (1.0.0)
+    mustermann (1.0.3)
     netrc (0.11.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
     public_suffix (2.0.5)
-    rack (2.0.3)
-    rack-protection (2.0.0)
+    rack (2.0.6)
+    rack-protection (2.0.4)
       rack
     rake (10.5.0)
     rest-client (2.0.2)
@@ -58,13 +58,13 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.1)
-    sinatra (2.0.0)
+    sinatra (2.0.4)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.0)
+      rack-protection (= 2.0.4)
       tilt (~> 2.0)
     slop (3.6.0)
-    tilt (2.0.8)
+    tilt (2.0.9)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.5)
