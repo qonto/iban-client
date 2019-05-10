@@ -5,7 +5,7 @@ require 'iban_client/version'
 Gem::Specification.new do |s|
   s.name        = 'iban_client'
   s.version     = IbanClient::VERSION
-  s.date        = '2018-11-29'
+  s.date        = '2019-05-10'
   s.summary     = 'Iban.com client'
   s.description = 'Wrapper for the Iban.com API'
   s.authors     = ['Vincent Pochet']
