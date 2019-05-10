@@ -16,7 +16,6 @@ module IbanClient
     end
 
     def message
-      "#{initial_error.message}\n"\
       "Request iban: #{iban}\n"\
       "Response: #{response}"
     end
