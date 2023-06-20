@@ -53,6 +53,8 @@ module IbanClient
       )
     rescue RestClient::ExceptionWithResponse => err
       raise IbanClient::RequestError.new(iban: iban, response: err.response)
+    rescue => err
+      raise IbanClient::RequestError.new(iban: iban, response: err.message)
     end
 
     def params
