@@ -62,9 +62,7 @@ describe IbanClient::Iban, iban: true do
       before do
         allow(RestClient::Request).to receive(:execute).and_raise(StandardError, "Cant connect")
       end
-      it { expect { subject.bic }.to raise_error(IbanClient::RequestError) do |error|
-        expect(error).to have_attributes(response: "Cant connect")
-      end }
+      it { expect { subject.bic }.to raise_error(IbanClient::RequestError, /Response: Cant connect/) }
     end
   end
 
