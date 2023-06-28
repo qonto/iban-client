@@ -57,6 +57,13 @@ describe IbanClient::Iban, iban: true do
       let(:iban) { 'invalid_json' }
       it { expect { subject.bic }.to raise_error(IbanClient::RequestError) }
     end
+
+    context 'with an unexpected error' do
+      before do
+        allow(RestClient::Request).to receive(:execute).and_raise(StandardError, "Cant connect")
+      end
+      it { expect { subject.bic }.to raise_error(IbanClient::RequestError, /Response: Cant connect/) }
+    end
   end
 
   describe 'sepa_data' do
